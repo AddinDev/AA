@@ -1,11 +1,11 @@
 import XCTest
-@testable import AlphaPackage
+@testable import CharliePackage
 
-final class AlphaPackageTests: XCTestCase {
+final class CharliePackageTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(AlphaPackage().text, "Hello, World!")
+        XCTAssertEqual(CharliePackage().text, "Hello, World!")
     }
 }
