@@ -10,7 +10,7 @@ let package = Package(
         .library(
             name: "AlphaPackage",
             targets: ["AlphaPackage"]),
-        .library(name: "AlphaPackageStatic", type: .static, targets: ["AlphaPackage"])
+        .library(name: "BetaPackage", targets: ["BetaPackage"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,8 +22,7 @@ let package = Package(
         .target(
             name: "AlphaPackage",
             dependencies: []),
-        .testTarget(
-            name: "AlphaPackageTests",
-            dependencies: ["AlphaPackage"]),
+        .target(name: "BetaPackage",
+               path: "BetaPackage/Sources")
     ]
 )
